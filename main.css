@@ -70,8 +70,12 @@ p{
 }
 
 #contact{
+    
     padding-left: 100px;
     padding-right: 100px;
+    
+
+   
 }
 
 hr{
@@ -83,4 +87,8 @@ hr{
 #contact-links{
     color: black;
     text-decoration: none;
+}
+
+#my-projects{
+    padding-left: 100px;
 }
