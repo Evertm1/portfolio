@@ -3,8 +3,8 @@
 
 .project-container {
     display: flex;
-    margin-left: 60px;
-    background-color: rgb(227, 231, 236);
+    /* margin-left: 10%; */
+    background-color: rgba(212, 221, 230, 0.438);
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
@@ -13,14 +13,14 @@
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 3px;
-    -webkit-box-shadow: -2px -1px 15px 7px rgba(119, 119, 119, 0.5);
-  -moz-box-shadow: -3px -2px 30px 14px rgba(112, 111, 111, 0.425);
-  box-shadow: -4px -3px 45px 21px rgba(105, 105, 105, 0.35);
+    -webkit-box-shadow: -2px -1px 15px 7px rgba(167, 167, 167, 0.5);
+  -moz-box-shadow: -3px -2px 30px 14px rgba(158, 158, 158, 0.425);
+  box-shadow: -4px -3px 45px 21px rgba(134, 134, 134, 0.35);
     
 }
 
 button{
-    background-color: rgb(94, 101, 136);
+    background-color: rgb(105, 104, 102);
     border: none;
     color: white;
     text-align: center;
@@ -29,6 +29,10 @@ button{
     height: 35px;
     margin-top: 15px;
     font-family: 'Cairo', sans-serif;
+
+}
+button:hover{
+    background-color: rgb(99, 142, 182);
 
 }
 
@@ -56,39 +60,86 @@ a{
     
 }
 
-h3{
-    font-family: 'Cairo', sans-serif;
+#contact {
+    
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+    color: rgb(66, 66, 64);
+    
+}
+
+h2, h1{
+    /* font-family: 'Cairo', sans-serif; */
+    color: rgb(66, 66, 64);
+    font-family: 'Libre Baskerville', serif;
+}
+
+h1{
+    font-size: 65px;
+    margin-top: 200px;
 }
 
 p{
     font-family: 'Cairo', sans-serif;
+    /* padding-left: 15%;
+    padding-right: 15%; */
 }
+
+#bio {
+    padding-left: 15%;
+    padding-right: 15%;
+    font-family: 'Libre Baskerville', serif;
+    color: rgb(66, 66, 64);
+}
+
 
 #header{
-    padding-left: 100px;
-    padding-right: 100px;
+    width: 100%;
+    height: 500px;
+    background-image: url('./Images/desk.jpeg');
+    background-image: linear-gradient(to bottom, rgba(149, 170, 202, 0.692) 0%,rgb(248, 247, 244) 100%), url('./Images/desk.jpeg') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+
+    
 }
 
-#contact{
-    
-    padding-left: 100px;
-    padding-right: 100px;
-    
 
-   
-}
 
 hr{
-    width:80%;
+    width:40%;
     size: 3;
     color: rgb(124, 124, 124)
 }
 
+
 #contact-links{
-    color: black;
+    color: rgb(66, 66, 64);
     text-decoration: none;
 }
 
-#my-projects{
-    padding-left: 100px;
+#contact-links:hover{
+    color: rgb(99, 142, 182);
 }
+
+
+
+body{
+    background-color: rgb(248, 247, 244);
+    display: grid;
+    place-items: center;
+    /* height: 100vh; */
+    margin: 0;
+}
+
+.hide {
+    display: none;
+  }
+  
+.jamlaunch:hover + .hide {
+    display: block;
+    color: red;
+    width: 100px;
+  }
