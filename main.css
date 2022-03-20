@@ -138,8 +138,9 @@ body{
     display: none;
   }
   
-.jamlaunch:hover + .hide {
-    display: block;
-    color: red;
-    width: 100px;
+
+  @media only screen and (max-width: 600px) {
+    .project-container {
+      display: grid;
+    }
   }
